@@ -3,16 +3,16 @@ body {
   margin: 0;
   font-family: "Gowun Dodum", sans-serif;
   font-weight: 400;
-  background: radial-gradient(circle at 20%, #88c1e7, #2342cc);
+  background: radial-gradient(circle at 20%, #b6dbf5, #5b9fdf);
   color:#fff;
 }
 
 a{
-  color: #ededed;
+  color: #fff;
   text-decoration: none;
 }
 a:hover{
-  color:#fff;
+  color:#064ce4;
   text-decoration: underline;
 }
 .contents{
@@ -25,7 +25,7 @@ aside{
   width: 300px;
   height: 100%;
   position: fixed;
-  border-right:1px solid #1f5ee6;
+  border-right:1px solid #255fdd;
   padding: 80px 40px;
 }
 .title{
@@ -42,7 +42,7 @@ aside{
 }
 .title-desc{
   line-height: 1.2;
-  color: #eedede;
+  color: #0c339e;
 }
 .mynav{
   list-style-type: none;
@@ -52,8 +52,11 @@ aside{
 .mynav li{
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dashed #1f5ee6;
+  border-bottom: 1px dashed #255fdd;
   cursor: pointer;
+}
+.mynav li:hover{
+  color:#0c339e;
 }
 #about, #story, #project, #contact{
   margin-bottom: 100px;
@@ -71,5 +74,5 @@ aside{
   margin-bottom: 20px;
 }
 .nav-active{
-
+  
 }

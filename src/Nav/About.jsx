@@ -1,11 +1,11 @@
 import React from 'react'
-import { FcDebt} from "react-icons/fc";
+import { FcCloseUpMode } from "react-icons/fc";
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const About = () => {
   return (
     <Container id="about">
-        <h1><FcDebt />About</h1>
+        <h1><FcCloseUpMode />About me</h1>
         <Row className="border-bottom">
             <Col md={8}>
                 <p>EZEN 컴퓨터 아카데미에서 6개월 동안 JAVA(서블릿, 스프링, 스프링부트), React 
@@ -20,10 +20,9 @@ const About = () => {
                     시킬 수 있었습니다. 프로젝트이 성공적인 완료를 위해 동료들과 지속적으로
                     의견을 조율하고, 합의점을 찾는 과정에서 많은 것을 배웠습니다.
                 </p>
-                <p>ㅇddddddddㄹㅇ</p>
             </Col>
             <Col md={4}>
-                <Image src="./images/me.png" fluid/>
+                <Image src="./images/me2.png" fluid/>
             </Col>
         </Row>
     </Container>

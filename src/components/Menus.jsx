@@ -10,7 +10,7 @@ const Links = styled.span`
     width: 15px;
     height: 10px;
     border-radius: 50%;
-    border: 3px solid #ddd;
+    border: 3px solid #0c339e;
     position:relative;
     transition: all 300ms ease;
     &:first-child::after{
@@ -19,7 +19,7 @@ const Links = styled.span`
         width: 15px;
         position: absolute;
         left: 6px;
-        border: 2px solid #ddd;
+        border: 2px solid #0c339e;
         border-radius: 40px;
         transition: width 300ms ease
     }

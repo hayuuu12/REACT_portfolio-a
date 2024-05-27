@@ -1,12 +1,12 @@
 import React from 'react'
-import { FcEngineering } from "react-icons/fc";
+import { FcLike } from "react-icons/fc";
 
 const Header = () => {
   return (
     <div>
         <h1 className="title">
             <div className="title-icon">
-                <FcEngineering className="d-block" />
+                <FcLike className="d-block" />
             </div>
             <div className="d-block">
                 <a href="#">HY's PORTFOLIO SITE</a>
