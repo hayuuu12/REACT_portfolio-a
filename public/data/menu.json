@@ -1,8 +1,0 @@
-{
-    "menu" : [
-        {"name" : "about me", "link" : "about me"},
-        {"name" : "story", "link" : "story"},
-        {"name" : "project", "link" : "project"},
-        {"name" : "contact", "link" : "contact"}
-    ]
-}

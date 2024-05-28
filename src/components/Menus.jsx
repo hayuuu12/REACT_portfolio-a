@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const MainLink = styled.div`
+const MainLink = styled.a`
   display:flex;
   align-items:center;
+  text-transform: capitalize;
 `;
 const Links = styled.span`
     display: inline-block;
@@ -21,7 +22,7 @@ const Links = styled.span`
         left: 6px;
         border: 2px solid #0c339e;
         border-radius: 40px;
-        transition: width 300ms ease
+        transition: width 300ms ease;
     }
     &:last-child{
         margin-left: 3px;
@@ -31,43 +32,43 @@ const Links = styled.span`
 `;
 const HoverLink = styled(MainLink)`
     &:hover ${Links}:first-child::after{
-      width:30px;
+      width:25px;
     }
     &:hover ${Links}:last-child{
-      margin-left: 18px;
+      margin-left: 13px;
     }
 `;
 const ActiveLink = styled(MainLink)`
+    color:#0c339e;
+    font-weight:600;
+    text-decoration:underline;
     ${Links}:first-child::after{
-      width:30px;
+      width:25px;
     }
     ${Links}:last-child{
-      margin-left:18px;
+      margin-left: 13px;
     }
 `;
 const Menus = ({navtitle, navLink, navActive, setNavActive}) => {
-  //메뉴이동 함수
-  const scrollTo = (id) => {
-    const ele = document.getElementById(id);
-    if(ele){
-      setNavActive(!navActive);
-      ele.scrollIntoView({behavior: 'smooth'});
-    }
+
+  const handleLink = (links) => {
+    setNavActive(links);
   }
-  return navActive? (
-                    <ActiveLink onClick={()=>scrollTo(navLink)}>
-                      <Links />
-                      <Links />
-                      {navtitle}
-                    </ActiveLink>
-                  ) : (
-                    <HoverLink>
-                      <Links />
-                      <Links />
-                      {navtitle}
-                    </HoverLink>
-                  )
-    }
+
+  const activeLinks = <ActiveLink href={'#'+navLink} onClick={() => handleLink(navLink)}>
+                        <Links />
+                        <Links />
+                        {navtitle}
+                      </ActiveLink>;
+  const hoverLinks = <HoverLink href={'#'+navLink}  onClick={() => handleLink(navLink)}>
+                        <Links />
+                        <Links />
+                        {navtitle}
+                      </HoverLink>;
+
+  return navActive && navActive === navLink ? activeLinks : hoverLinks
+  
+}
 
 
 export default Menus

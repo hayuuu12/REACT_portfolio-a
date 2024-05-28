@@ -6,7 +6,7 @@ const Aside = () => {
   return (
     <aside>
         <Header />
-        <p className="title-desc">
+        <p className="title-desc d-none d-md-block mt-0 mt-md-2">
           I'm new full-stack developer. I mainly use java,
           but sdfgdfgsg. sdgsdfsdfsdf.
         </p>
